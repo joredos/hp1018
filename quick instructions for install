@@ -1,4 +1,4 @@
-## Quick install
+## Quick install if you download the zip file directly from web to the mac
 
 1. `xcode-select --install` — install Apple's Command Line Tools (skip if already installed).
 
