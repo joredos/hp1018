@@ -1,0 +1,15 @@
+## Quick install
+
+1. `xcode-select --install` — install Apple's Command Line Tools (skip if already installed).
+
+2. Connect the printer (direct cable or dock), switch it on, and remove any HP LaserJet entries macOS added in Printers & Scanners.
+
+3. `cd ~/Downloads && unzip -o hp1020-macos*.zip && cd hp1020-macos*/` — skip `unzip` if Safari already extracted it.
+4. `sudo sh ./install.sh` — add `--paper Letter` for US paper. The printer clicks once when the firmware loads.
+
+5. If asked, allow `hp1020-fwd` in System Settings → General → Login Items & Extensions.
+6. `sudo hp1020-tool status` — the daemon should be `running` and the printer `present on USB`.
+7. `hp1020-tool test-dry` — preview of the output, no paper used. Then `hp1020-tool test-print` prints a test page.
+
+8. Stuck job? `sudo cancel -a -x`, switch the printer off and on, then `tail /Library/Logs/HP1020/hp1020-fwd.log`.
+9. Uninstall: `sudo sh ./uninstall.sh`
