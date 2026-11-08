@@ -5,8 +5,6 @@ A native **arm64** driver for the **HP LaserJet 1018** and **HP LaserJet 1020** 
 > **Tested on:** MacBook Pro 14" (M2 Pro), macOS 26.5, HP LaserJet 1018 connected through a USB‑C docking station.
 > The LaserJet 1020 uses the same code path and has been tested in simulation, but not on real hardware yet. Reports are welcome; see [Reporting problems](#reporting-problems).
 
-[Български](README.bg.md)
-
 ---
 
 ## Contents
